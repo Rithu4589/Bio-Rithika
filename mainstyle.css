@@ -6,13 +6,16 @@ body {
     margin: 0;
     padding: 0;
 }
+h1{
+    padding-left: 5%;
+}
 
 /* ===== Header ===== */
 header {
     background-color: #ffb6b9; /* soft pink */
     text-align: center;
     padding: 30px 0;
-    border-bottom: 4px solid #f08a5d;
+    border-bottom: 4px solid #b80202;
 }
 
 header h1 {
@@ -40,8 +43,8 @@ h2 {
 }
 
 ol {
-    margin-left: 20px;
-    line-height: 1.6;
+    margin-left: 15px;
+    line-height: 2.0;
 }
 
 li {
@@ -49,11 +52,11 @@ li {
 }
 
 hr {
-    margin: 30px 0;
+    margin: 10px;
     border: none;
     height: 2px;
     background: #f08a5d;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 /* ===== Footer ===== */
