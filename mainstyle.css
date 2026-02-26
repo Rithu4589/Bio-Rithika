@@ -1,69 +1,46 @@
-/* ===== General Body ===== */
+:root {
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --primary: #6c8ead;
+  --accent: #a8c3d8;
+  --text: #2f3e46;
+}
+
 body {
-    background-color: #a0e7e5; /* soft aqua */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-h1{
-    padding-left: 5%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
 
-/* ===== Header ===== */
-header {
-    background-color: #ffb6b9; /* soft pink */
-    text-align: center;
-    padding: 30px 0;
-    border-bottom: 4px solid #b80202;
+/* GRID CONTAINER */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 50px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 3em;
-    color: #fff;
-    text-shadow: 2px 2px #f67280;
+/* CARD STYLE */
+.card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
 }
 
-/* ===== Main Content ===== */
-main {
-    max-width: 900px;
-    margin: 40px auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+.card:hover {
+  transform: translateY(-6px);
 }
 
-h2 {
-    color: #f08a5d;
-    border-bottom: 2px solid #f08a5d;
-    padding-bottom: 5px;
-    margin-top: 30px;
+/* TEXT STYLE */
+.card h2 {
+  margin-top: 0;
+  color: var(--primary);
 }
 
-ol {
-    margin-left: 15px;
-    line-height: 2.0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-hr {
-    margin: 10px;
-    border: none;
-    height: 2px;
-    background: #f08a5d;
-    border-radius: 5px;
-}
-
-/* ===== Footer ===== */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffb6b9;
-    color: #fff;
-    font-weight: bold;
+.card p {
+  line-height: 1.7;
+  max-width: 65ch;
 }
