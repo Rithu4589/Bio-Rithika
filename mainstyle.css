@@ -44,3 +44,9 @@ body {
   line-height: 1.7;
   max-width: 65ch;
 }
+
+img {
+  max-width: 30%; /* Ensures the image doesn't exceed its container's width */
+  height: auto;    /* Automatically adjusts height to maintain aspect ratio */
+  display: block;  /* Removes extra space below the image (default is inline) */
+}
